@@ -1,5 +1,6 @@
 package com.example.huanxindemo.user;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputEditText;
@@ -13,6 +14,7 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.huanxindemo.HomeActivity;
 import com.example.huanxindemo.R;
 import com.hyphenate.EMCallBack;
 import com.hyphenate.chat.EMClient;
@@ -78,7 +80,7 @@ public class LoginFragment extends DialogFragment {
                     @Override
                     public void run() {
                         stopLoading();
-                        showLoginSuccess();
+                        navigateToHome();
                         dismiss();
                     }
                 });
@@ -126,6 +128,12 @@ public class LoginFragment extends DialogFragment {
     public void showLoginFail(String msg) {
         String info = getString(R.string.user_error_login_fail, msg);
         Toast.makeText(getContext(), info, Toast.LENGTH_SHORT).show();
+    }
+
+    public void navigateToHome() {
+        Intent intent = new Intent(getContext(), HomeActivity.class);
+        startActivity(intent);
+        getActivity().finish();
     }
 
 
