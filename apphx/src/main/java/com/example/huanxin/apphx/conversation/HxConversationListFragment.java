@@ -1,10 +1,13 @@
 package com.example.huanxin.apphx.conversation;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 
+import com.example.huanxin.apphx.chat.HxChatActivity;
 import com.hyphenate.EMMessageListener;
 import com.hyphenate.chat.EMChatManager;
 import com.hyphenate.chat.EMClient;
+import com.hyphenate.chat.EMConversation;
 import com.hyphenate.chat.EMMessage;
 import com.hyphenate.easeui.ui.EaseConversationListFragment;
 
@@ -17,6 +20,16 @@ import java.util.List;
 public class HxConversationListFragment extends EaseConversationListFragment implements EMMessageListener {
     private EMChatManager mEMChatManager;
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setConversationListItemClickListener(new EaseConversationListItemClickListener() {
+            @Override
+            public void onListItemClicked(EMConversation conversation) {
+                HxChatActivity.open(getContext(), conversation.getUserName());
+            }
+        });
+    }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {

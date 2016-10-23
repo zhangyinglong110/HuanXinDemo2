@@ -1,8 +1,10 @@
 package com.example.huanxin.apphx.contact;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.util.Log;
 
+import com.example.huanxin.apphx.chat.HxChatActivity;
 import com.hyphenate.EMContactListener;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMContactManager;
@@ -21,6 +23,17 @@ public class HxContactListFragment extends EaseContactListFragment implements EM
     private EMContactManager mEMContactManager;
     private List<String> contacts;
 
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContactListItemClickListener(new EaseContactListItemClickListener() {
+            @Override
+            public void onListItemClicked(EaseUser user) {
+                HxChatActivity.open(getContext(), user.getUsername());
+            }
+        });
+    }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
