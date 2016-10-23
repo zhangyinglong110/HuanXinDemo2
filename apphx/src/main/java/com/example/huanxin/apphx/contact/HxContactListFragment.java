@@ -3,7 +3,12 @@ package com.example.huanxin.apphx.contact;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.ListAdapter;
+import android.widget.Toast;
 
+import com.example.huanxin.apphx.R;
 import com.example.huanxin.apphx.chat.HxChatActivity;
 import com.hyphenate.EMContactListener;
 import com.hyphenate.chat.EMClient;
@@ -47,6 +52,35 @@ public class HxContactListFragment extends EaseContactListFragment implements EM
     private void customUI() {
         // 隐藏EaseUI的标题栏
         super.hideTitleBar();
+        //设置ListView头部的内容(添加新朋友)
+        setHeaderView();
+    }
+
+    private void setHeaderView() {
+        View headerView = LayoutInflater.from(getContext()).
+                inflate(R.layout.partial_hx_contact_list_header, listView, false);
+        //"添加新朋友"View
+        View addContacts = headerView.findViewById(R.id.layout_add_contacts);
+        addContacts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "添加新朋友", Toast.LENGTH_SHORT).show();
+            }
+        });
+        //"邀请和通知"View
+        View notifications = headerView.findViewById(R.id.layout_notifications);
+        notifications.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "邀请和通知", Toast.LENGTH_SHORT).show();
+            }
+        });
+        ListAdapter adapter = listView.getAdapter();
+        listView.setAdapter(null);
+        //note:在Android4.4之前，此方法   只能在ListView设置适配器之前使用
+        listView.addHeaderView(headerView);
+        listView.setAdapter(adapter);
+
     }
 
     private void asyncGetContactsFromServer() {
