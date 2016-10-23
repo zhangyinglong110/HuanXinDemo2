@@ -25,9 +25,15 @@ public class HxContactListFragment extends EaseContactListFragment implements EM
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        customUI();
         mEMContactManager = EMClient.getInstance().contactManager();
         mEMContactManager.setContactListener(this);
         asyncGetContactsFromServer();
+    }
+
+    private void customUI() {
+        // 隐藏EaseUI的标题栏
+        super.hideTitleBar();
     }
 
     private void asyncGetContactsFromServer() {

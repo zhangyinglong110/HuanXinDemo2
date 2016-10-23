@@ -20,12 +20,12 @@
         "source": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_search_bar_with_padding.xml"
     },
     {
-        "merged": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_widget_chat_input_menu.xml",
-        "source": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_widget_chat_input_menu.xml"
-    },
-    {
         "merged": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_widget_chat_primary_menu.xml",
         "source": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_widget_chat_primary_menu.xml"
+    },
+    {
+        "merged": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_widget_chat_input_menu.xml",
+        "source": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_widget_chat_input_menu.xml"
     },
     {
         "merged": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_expression.xml",
@@ -88,12 +88,12 @@
         "source": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_sent_voice.xml"
     },
     {
-        "merged": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_chat_menu_item.xml",
-        "source": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_chat_menu_item.xml"
-    },
-    {
         "merged": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_layout_chat_primary_menu.xml",
         "source": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_layout_chat_primary_menu.xml"
+    },
+    {
+        "merged": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_chat_menu_item.xml",
+        "source": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_chat_menu_item.xml"
     },
     {
         "merged": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_received_message.xml",
@@ -140,12 +140,12 @@
         "source": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_fragment_chat.xml"
     },
     {
-        "merged": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_contact.xml",
-        "source": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_contact.xml"
-    },
-    {
         "merged": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_sent_location.xml",
         "source": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_sent_location.xml"
+    },
+    {
+        "merged": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_contact.xml",
+        "source": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_contact.xml"
     },
     {
         "merged": "E:\\androidstudio\\HuanXinDemo2\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_fragment_contact_list.xml",
