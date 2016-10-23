@@ -1,5 +1,6 @@
 package com.example.huanxin.apphx.contact;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.huanxin.apphx.R;
 import com.example.huanxin.apphx.chat.HxChatActivity;
+import com.example.huanxin.apphx.contact.search.AddContactActivity;
 import com.hyphenate.EMContactListener;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMContactManager;
@@ -64,7 +66,8 @@ public class HxContactListFragment extends EaseContactListFragment implements EM
         addContacts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "添加新朋友", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getContext(), AddContactActivity.class);
+                startActivity(intent);
             }
         });
         //"邀请和通知"View

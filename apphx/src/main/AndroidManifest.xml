@@ -47,7 +47,8 @@
         </receiver>
         <!-- *********环信相关配置:结束********* -->
 
-        <activity android:name=".chat.HxChatActivity"></activity>
+        <activity android:name=".chat.HxChatActivity" />
+        <activity android:name=".contact.search.AddContactActivity"></activity>
     </application>
 
 </manifest>
